@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CustomerList from './components/CustomerList';
 import CustomerDetails from './components/CustomerDetails';
-import { getCustomers } from './services/CustomerService';
+import { getCustomers } from './services/customerService';
 import './App.css';
 
 interface Customer {

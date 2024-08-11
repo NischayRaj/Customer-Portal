@@ -20,7 +20,7 @@ const CustomerDetails: React.FC<CustomerDetailsProps> = ({ customer }) => {
 
   const fetchPokemonImages = async () => {
     try {
-      const promises = Array.from({ length: 9 }, (_, i) =>
+      const promises = Array.from({ length: 9 }, (_,) =>
         fetch(`https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random() * 151) + 1}`)
           .then(res => res.json())
       );
