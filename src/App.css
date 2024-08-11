@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  height: 100vh; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.sidebar {
+  width: 400px;
+  border-right: 1px solid gray;
+  background-color: #f0f0f0;
+  padding: 35px;
+  overflow-y: auto; 
+}
+
+.content {
+  flex: 1; 
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
